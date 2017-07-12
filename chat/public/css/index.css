@@ -1,0 +1,97 @@
+
+.kaiwa {
+    margin-bottom: 40px;
+}
+/* 左画像 */
+.kaiwa-img-left {
+    margin: 0;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.kaiwa figure img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin: 0;
+}
+/* 画像の下のテキスト */
+.kaiwa-img-description {
+    padding: 5px 0 0;
+    font-size: 10px;
+    text-align: center;
+}
+/* 左からの吹き出しテキスト */
+.kaiwa-text-right {
+    position: relative;
+    display: inline-block;
+    margin-left: 80px;
+    padding: 10px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    background-color: skyblue;
+}
+
+p.kaiwa-text {
+    margin: 0 0 20px;
+}
+p.kaiwa-text:last-child {
+    margin-bottom: 0;
+}
+/* 左の三角形を作る */
+.kaiwa-text-right:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #aaa;
+    top: 15px;
+    left: -20px;
+}
+.kaiwa-text-right:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #fff;
+    top: 15px;
+    left: -19px;
+}
+
+/* 回り込み解除 */
+.kaiwa:after,.kaiwa:before {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+
+
+
+/* 右の三角形を作る */
+.kaiwa-text-left:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #aaa;
+    top: 15px;
+    right: -20px;
+}
+.kaiwa-text-left:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #fff;
+    top: 15px;
+    right: -19px;
+}
+/* 回り込み解除 */
+.kaiwa:after,.kaiwa:before {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+
