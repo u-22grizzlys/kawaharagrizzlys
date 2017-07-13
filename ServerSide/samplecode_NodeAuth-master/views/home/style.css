@@ -1,0 +1,30 @@
+h1{
+	color: #fff;
+	font-size: 24px;
+	position: relative;
+	margin-left: -14px;
+	padding: 8px 16px;
+	background: #d14;
+	&:before{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 0;
+		height: 0;
+		border: 8px solid #fff;
+		border-top: 8px solid rgba(0,0,0,0.5);
+		border-left: 8px solid rgba(0,0,0,0.5);
+	}
+}
+
+body{
+	background: #5b6a78;
+}
+
+div{
+	width: 80%;
+	margin: 0 auto;
+	padding: 14px;
+	background: #fff;
+}

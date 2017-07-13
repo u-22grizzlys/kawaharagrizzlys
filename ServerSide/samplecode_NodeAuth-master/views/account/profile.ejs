@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <%- include("../_head.ejs", {title: "/account/registration"}) %>
+  </head>
+  <body>
+
+    <%- include("../_nav.ejs") %>
+
+    <div class="container">
+      <div class="col-sm-offset-3 col-sm-6">
+        <h1><i class="fa fa-user"></i> プロフィール</h1>
+        <p>プロフィール</p>
+        <table class="table table-bordered">
+        <% for (var key in user) { %>
+          <tr>
+            <th class="col-sm-3"><%= key %></th>
+            <td class="col-sm-9"><%= user[key] %></td>
+          </tr>
+        <% }%>
+        </table>
+        <form class="text-right" method="POST" action="/account/logout">
+          <input type="submit" class="btn btn-default btn-lg" value="sign-out" />
+        </form>
+      </div>
+    </div><!-- /.container -->
+ 
+    <%- include("../_scripts.ejs") %>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "Node authentication sample code.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garafu/samplecode_NodeAuth.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Passport",
+    "MondoDB"
+  ],
+  "author": "garafu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garafu/samplecode_NodeAuth/issues"
+  },
+  "homepage": "https://github.com/garafu/samplecode_NodeAuth#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "bower": "^1.8.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "mongoose": "^4.11.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}
