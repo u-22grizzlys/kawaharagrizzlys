@@ -12,12 +12,12 @@
         },
  
         createOverlays: function createOverlaysFn() {
-        // 背景画像
+          // 背景画像
           var tracker = new AR.ClientTracker("tracker.wtc");
           //表示される画像
          var imgOne = new AR.ImageResource("cute_rabbit.png");
-         //表示される画像の位置
-          var overlayOne = new AR.ImageDrawable(imgOne, 1, {
+          //表示される画像の位置
+         var overlayOne = new AR.ImageDrawable(imgOne, 1, {
             offsetX: -0.15,
             offsetY: 0
           });
