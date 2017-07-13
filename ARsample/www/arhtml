@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="architect://architect.js"></script>
+    <script>
+      var World = {//AR機能スタート
+        loaded: false,
+ 
+        init: function initFn() {
+          this.createOverlays();
+        },
+ 
+        createOverlays: function createOverlaysFn() {
+        // 背景画像
+          var tracker = new AR.ClientTracker("tracker.wtc");
+          //表示される画像
+         var imgOne = new AR.ImageResource("cute_rabbit.png");
+         //表示される画像の位置
+          var overlayOne = new AR.ImageDrawable(imgOne, 1, {
+            offsetX: -0.15,
+            offsetY: 0
+          });
+          new AR.Trackable2DObject(tracker, "*", {
+            drawables: {
+              cam: overlayOne
+            }
+          });
+        }
+      };
+      World.init();//AR終了
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
